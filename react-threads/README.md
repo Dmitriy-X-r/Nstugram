@@ -1,13 +1,13 @@
 # Для запуска проекта, необходимо выполнить следующие шаги:
 
-1. Склонировать репозиторий с клиентским приложением по ссылке https://github.com/brian7346/react-threads.git на свой компьютер.
+1. Склонировать репозиторий с клиентским приложением по ссылке https://github.com/Dmitriy-X-r/Nstugram.git на свой компьютер.
 ```
-git clone https://github.com/brian7346/react-threads.git
+git clone https://github.com/Dmitriy-X-r/Nstugram.git
 ```
 
-2. Склонировать репозиторий с api по ссылке [https://github.com/brian7346/express-threads-api.git](https://github.com/brian7346/express-threads-api/tree/main) на свой компьютер.
+2. Склонировать репозиторий с api по ссылке [https://github.com/Dmitriy-X-r/express-threads-api.git](https://github.com/Dmitriy-X-r/express-threads-api.git) на свой компьютер.
 ```
-git clone https://github.com/brian7346/express-threads-api.git
+git clone https://github.com/Dmitriy-X-r/express-threads-api.git
 ```
 
 3. Открыть терминал (или командную строку) и перейти в корневую директорию сервера.
@@ -27,16 +27,3 @@ docker compose up
 
 6. Открыть браузер и перейти по адресу http://localhost:80, чтобы увидеть запущенный проект.
 
-
-
-# Если вы хотите скачать образ базы данных MongoDB
-
-Запустите контейнер с образом MongoDB и настройками replica set (он автоматичиски скачает и запустит этот образ):
-
-```
-  docker run --name mongo \
-       -p 27017:27017 \
-       -e MONGO_INITDB_ROOT_USERNAME="monty" \
-       -e MONGO_INITDB_ROOT_PASSWORD="pass" \
-       -d prismagraphql/mongo-single-replica:5.0.3
-```
